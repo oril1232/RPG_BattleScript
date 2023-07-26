@@ -1,16 +1,7 @@
-# This is a sample Python script.
+from classes.game import Player,bcolors
+import random
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+magic=[{"Name":"Fireball","Cost":"25","Damage":random.randrange(8,48)},
+       {"Name":" Lightning Bolt ","Cost":"25","Damage":random.randrange(8,48)},
+       {"Name":"Ray Of Frost","Cost":"5","Damage":random.randrange(1,8)}]
+player=Player(460,100,30,30,magic)
